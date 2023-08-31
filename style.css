@@ -1,0 +1,96 @@
+/* Reset styles */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+
+/* Body styles */
+body {
+    background-color: #2647b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Wrapper styles */
+.wrapper {
+    width: 450px;
+    background-color: #ffffff;
+    padding: 70px 40px;
+    position: relative;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeScaleUp 0.6s ease-in-out;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Input styles */
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3164ff;
+}
+
+/* Convert button styles */
+.convert-btn {
+    background-color: #3164ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.convert-btn:hover {
+    background-color: #1a4bd1;
+    transform: scale(1.05);
+}
+
+/* Result styles */
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3164ff;
+    animation: fadeScaleUp 0.6s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeScaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
